@@ -1,0 +1,18 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app using Express with dist folder",
+  "main": "server.js",
+  "scripts": {
+    "build": "mkdir dist 2>nul && copy server.js dist\\server.js && echo Build completed!",
+    "start": "node dist/server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["node", "express", "app", "dist"],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
